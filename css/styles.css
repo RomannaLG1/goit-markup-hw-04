@@ -42,6 +42,10 @@ p {
 	margin: 0;
 }
 
+ul {
+	padding: 0;
+}
+
 img {
 	display: block;
 	max-width: 100%;
@@ -144,6 +148,9 @@ img {
 	background-image: url(../image/smartphone.svg);
 	background-size: 10px 16px;
 }
+/* .icon-phone:hover {
+	fill: var(--accent-color);
+} */
 
 .site-nav .current {
 	color: var(--accent-color);
@@ -156,8 +163,7 @@ img {
 .footer-nav-address:hover,
 .footer-nav-address:focus,
 .footer-nav-contact:hover,
-.footer-nav-contact:focus
- {
+.footer-nav-contact:focus {
 	color: var(--accent-color);
 }
 
@@ -193,8 +199,6 @@ img {
 }
 
 /* -------------------------Section styles------------------------- */
-
-
 
 .section-title {
 	margin: 0 0 50px;
@@ -319,7 +323,7 @@ img {
 }
 
 .team-content {
-	padding: var(--card-set-gap) 32px 16px;
+	padding: var(--card-set-gap) 32px;
 }
 
 .team-title {
@@ -333,7 +337,7 @@ img {
 	color: var(--title-text-color);
 }
 .team-text {
-	/* padding-bottom: 16px; */
+	margin-bottom: 16px;
 
 	font-size: 16px;
 	line-height: 1.19;
@@ -342,7 +346,6 @@ img {
 }
 .social-list {
 	display: flex;
-	padding: 0 32px var(--card-set-gap);
 }
 
 .social-item {
@@ -359,7 +362,7 @@ img {
 	cursor: pointer;
 }
 
-.instagram {
+/* .instagram {
 	background-image: url(../image/instagram.svg);
 }
 .twitter {
@@ -370,7 +373,7 @@ img {
 }
 .linkedin {
 	background-image: url(../image/linkedin.svg);
-}
+} */
 
 .social-list .social-item + .social-item {
 	margin-left: 10px;
@@ -445,7 +448,6 @@ img {
 	border-color: #ececec;
 }
 .portfolio {
-	
 	padding: 0;
 	margin: 50px 0 0;
 
@@ -453,13 +455,13 @@ img {
 	flex-wrap: wrap;
 	margin-left: calc(-1 * var(--card-set-gap));
 	margin-top: calc(-1 * var(--card-set-gap));
-
-	}
+}
 
 .portfolio-flex {
 	flex-basis: calc(100% / 3 - var(--card-set-gap));
 	margin-left: var(--card-set-gap);
 	margin-top: var(--card-set-gap);
+	cursor: pointer;
 }
 .card-content {
 	padding: 20px 24px;
@@ -483,6 +485,11 @@ img {
 	font-size: 16px;
 	line-height: 1.88;
 	letter-spacing: 0.03em;
+}
+
+.portfolio-flex:hover,
+.portfolio-flex:focus {
+	box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 /* -------------------------Styles footer------------------------- */
@@ -509,18 +516,15 @@ img {
 
 .footer-nav-address {
 	color: var(--primare-bg-color);
-	
 }
 
 .footer-nav-contact {
 	color: rgba(255, 255, 255, 0.6);
-	
 }
 
 .footer-nav-item:not(:last-child) {
 	margin-bottom: 9px;
 }
-
 
 /*------------------ footer-social------------ */
 .footer-flex {
