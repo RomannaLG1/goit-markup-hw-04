@@ -86,3 +86,38 @@
 .linkedin {
 	background-image: url(../image/linkedin.svg);
 } */
+
+.footer-flex {
+	display: flex;
+}
+.footer-social {
+	display: block;
+	margin-left: 70px;
+	padding-top: 12px;
+}
+.social-title {
+	margin-bottom: 20px;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+
+	color: var(--primare-bg-color);
+}
+.footer-social .social-list {
+	padding: 0;
+}
+.footer-instagram {
+	padding: 0;
+	background-image: url(../image/f-instagram.png);
+}
+.footer-twitter {
+	background-image: url(../image/f-twitter.png);
+}
+.footer-facebook {
+	background-image: url(../image/f-facebook.png);
+}
+.footer-linkedin {
+	background-image: url(../image/f-linkedin.png);
+}
