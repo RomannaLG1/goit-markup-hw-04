@@ -8,6 +8,7 @@
 	--secondary-accent-color: #000000;
 	--card-set-gap: 30px;
 	--section-set-gap: 94px;
+	--icon-color: #afb1b8;
 }
 
 .page {
@@ -129,7 +130,8 @@ img {
 	fill: currentColor;
 	cursor: pointer;
 }
-.contact-icon:hover {
+.contact-icon:hover,
+.contact-icon:focus {
 	fill: var(--accent-color);
 }
 
@@ -316,19 +318,22 @@ img {
 	align-items: center;
 	height: 44px;
 	width: 44px;
-	/* background-color: rgba(255, 255, 255, 0.1); */
+	background-color: var(--primare-bg-color);
 	block-size: 44px;
 	/* outline: 1px solid tomato; */
 	border-radius: 50%;
 	cursor: pointer;
+	color: var(--icon-color);
 }
 .social-icon {
-	fill: #afb1b8;
+	fill: currentColor;
 }
-.social-icon:hover {
+.social-icon:hover,
+.social-icon:focus {
 	fill: var(--primare-bg-color);
 }
-.social-link:hover {
+.social-link:hover,
+.social-link:focus {
 	background-color: var(--accent-color);
 }
 
@@ -361,11 +366,14 @@ img {
 	border-radius: 4px;
 	width: 170px;
 	height: 92px;
-	border: 1px solid #afb1b8;
+	border: 1px solid var(--icon-color);
 	border-radius: 4px;
 	cursor: pointer;
+	color: var(--icon-color);
 }
-.client-link:hover {
+.client-link:hover,
+.client-link:focus {
+	color: var(--accent-color);
 	border: 1px solid var(--accent-color);
 }
 
@@ -373,11 +381,7 @@ img {
 	margin-right: var(--card-set-gap);
 }
 .client-icon {
-	fill: #afb1b8;
-}
-
-.client-icon:hover {
-	fill: var(--accent-color);
+	fill: currentColor;
 }
 
 /* -------------------------Button styles------------------------- */
@@ -400,7 +404,8 @@ img {
 	text-align: center;
 	cursor: pointer;
 }
-.hero-buttom:hover {
+.hero-buttom:hover,
+.hero-buttom:focus {
 	background-color: #188ce8;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
@@ -554,12 +559,14 @@ img {
 	/* outline: 1px solid tomato; */
 	border-radius: 50%;
 	cursor: pointer;
-}
-.footer-social-link:hover {
-	background-color: var(--accent-color);
+	color: var(--primare-bg-color);
 }
 .footer-social-icon {
-	fill: var(--primare-bg-color);
+	fill: currentColor;
+}
+.footer-social-link:hover,
+.footer-social-link:focus {
+	background-color: var(--accent-color);
 }
 
 .social-title {
