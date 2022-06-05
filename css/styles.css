@@ -127,10 +127,10 @@ img {
 .contact-icon {
 	margin-right: 10px;
 	fill: currentColor;
+	cursor: pointer;
 }
 .contact-icon:hover {
 	fill: var(--accent-color);
-	cursor: pointer;
 }
 
 .site-nav .current {
@@ -316,15 +316,22 @@ img {
 	align-items: center;
 	height: 44px;
 	width: 44px;
-	background-color: rgba(255, 255, 255, 0.1);
+	/* background-color: rgba(255, 255, 255, 0.1); */
 	block-size: 44px;
-	outline: 1px solid tomato;
+	/* outline: 1px solid tomato; */
 	border-radius: 50%;
 	cursor: pointer;
 }
 .social-icon {
-	cursor: pointer;
+	fill: #afb1b8;
 }
+.social-icon:hover {
+	fill: var(--primare-bg-color);
+}
+.social-link:hover {
+	background-color: var(--accent-color);
+}
+
 .social-item:not(:last-child) {
 	margin-right: 10px;
 }
@@ -334,6 +341,7 @@ img {
 }
 
 .client-list {
+	margin: 0;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -348,7 +356,7 @@ img {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-bottom: var(--card-set-gap);
+
 	background-color: transparent;
 	border-radius: 4px;
 	width: 170px;
@@ -357,10 +365,19 @@ img {
 	border-radius: 4px;
 	cursor: pointer;
 }
+.client-link:hover {
+	border: 1px solid var(--accent-color);
+}
+
 .client-item:not(:last-child) {
 	margin-right: var(--card-set-gap);
 }
 .client-icon {
+	fill: #afb1b8;
+}
+
+.client-icon:hover {
+	fill: var(--accent-color);
 }
 
 /* -------------------------Button styles------------------------- */
@@ -534,11 +551,15 @@ img {
 	width: 44px;
 	background-color: rgba(255, 255, 255, 0.1);
 	block-size: 44px;
-	outline: 1px solid tomato;
+	/* outline: 1px solid tomato; */
 	border-radius: 50%;
+	cursor: pointer;
+}
+.footer-social-link:hover {
+	background-color: var(--accent-color);
 }
 .footer-social-icon {
-	cursor: pointer;
+	fill: var(--primare-bg-color);
 }
 
 .social-title {
@@ -550,13 +571,4 @@ img {
 	text-transform: uppercase;
 
 	color: var(--primare-bg-color);
-}
-
-/* SVG-Style */
-.icon {
-	margin-left: 30px;
-}
-.icon:hover .letter {
-	margin-left: 40px;
-	fill: var(--accent-color);
 }
