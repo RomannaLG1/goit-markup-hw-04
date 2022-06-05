@@ -53,3 +53,36 @@
 }
 .icon-astronaut::before {
 	background-image: url(../image/astronaut.svg);
+	
+	
+	
+	.social-list {
+	display: flex;
+}
+
+.social-item {
+	display: block;
+	height: 44px;
+	width: 44px;
+	background-color: rgba(255, 255, 255, 0.1);
+	block-size: 44px;
+	/* outline: 1px solid tomato; */
+
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+/* .instagram {
+	background-image: url(../image/instagram.svg);
+}
+.twitter {
+	background-image: url(../image/twitter.svg);
+}
+.facebook {
+	background-image: url(../image/fb.svg);
+}
+.linkedin {
+	background-image: url(../image/linkedin.svg);
+} */
