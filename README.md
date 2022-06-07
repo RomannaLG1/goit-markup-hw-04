@@ -1,4 +1,12 @@
-# goit-markup-hw-04
+# 
+hover в іконках ставиться на а, button(якісь посилання), не на svg, якщо їх нема, тоді на svg  icon!!!!
+
+
+::befor
+::after
+якщо нема ефекту ховера
+
+goit-markup-hw-04
 .contacts-nav-item::before {
 	display: block;
 	content: "";
