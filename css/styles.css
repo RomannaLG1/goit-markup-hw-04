@@ -494,6 +494,10 @@ img {
 	letter-spacing: 0.03em;
 }
 
+.portfolio-card {
+	display: block;
+}
+
 .portfolio-card:hover,
 .portfolio-card:focus {
 	box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16);
